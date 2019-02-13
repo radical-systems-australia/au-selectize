@@ -299,6 +299,15 @@ export class AuSelectize {
         if (this.selectizeApi) {
             this.selectizeApi.destroy();
         }
+        if (this.optionsObserver) {
+            this.optionsObserver.dispose();
+        }
+        if (this.selectedObjectsObserver) {
+            this.selectedObjectsObserver.dispose();
+        }
+        if (this.selectedObjectsObserver) {
+            this.selectedObjectsObserver.dispose();
+        }
     }
 
     optionsChanged() {
